@@ -1,0 +1,67 @@
+  ____      _                 _       _             
+ / ___|__ _| | ___ ___   ___ | | __ _| |_ ___  _ __ 
+| |   / _` | |/ __/ _ \ / _ \| |/ _` | __/ _ \| '__|
+| |__| (_| | | (_| (_) | (_) | | (_| | || (_) | |   
+ \____\__,_|_|\___\___/ \___/|_|\__,_|\__\___/|_|   
+                                                    
+Homework - In your "Calcoolator" directory
+
+Rarely will a program be simple input/output like you have
+done so far. The "brains" of your program is in conditionals. 
+Conditionals allow you to verify input to see if there are errors
+or if you want to check what decision a user made. In this
+assignment, you will get practice writing a program and using 
+basic C++ libraries such as <cmath>. 
+Check the link out here: https://en.cppreference.com/w/cpp/header/cmath.
+You will write a program that will enable a user to do a variety
+of mathematical calculations. All strings should end with a newline.
+
+You must do it from scratch - don't forget the magic!
+
+It will need to do the following:
+
+1. Prompt the user with the following string:
+	"1) Simple Arithmetic 2) Square Root 3) Exponents 4) Trig: "
+
+2. Input their choice into an integer variable named whatever you want.
+
+3. Depending on their choice, prompt the user with the following string:
+	3a. IF choice == 1, prompt the user with "1) addition 2) subtraction 3) multiplication 4) division: "
+	3b. IF choice == 2, prompt the user with "Please enter the number to square root: "
+	3c. IF choice == 3, prompt the user with "Please enter two numbers: "
+	3d. If choice == 4, prompt the user with "1) sine 2) cosine 3) tangent: "
+
+4. Depending on their choice, have the user input one integer into a variable named whatever you want.
+   NOTE: IF choice == 3, have the user input two integers into two integer variables named whatever you want
+
+5. Depending on their choice, do the following:
+	5a. IF choice == 1, prompt the user with the following string: "Please enter two numbers: "
+	5b. IF choice == 2, output the square root and quit (If the user inputs 4, it should print 2)
+	5c. IF choice == 3, output the power of the first variable to the power of the second variable and quit (If user inputs 2 3, it should print 8)
+	5d. IF choice == 4, prompt the user with the following string: "Please enter a number: " 
+
+6. Depending on their choice, do...
+	6a. IF choice == 1, read into two integer variables named whatever you want.
+	6b. IF choice == 4, read into one FLOAT variable named whatever you want.
+
+7. Do the math of their choice.
+	6a. IF choice == 1 ("Simple Arithmetic") and then if secondChoice == 2 ("subtraction"), and the user inputted 6 and 3, you'd output 3 (6 - 3 = 3).
+	6b. IF choice == 4 ("Trig") and then if secondChoice == 1 ("sine"), and the user inputted 0, you'd output 0.
+
+8. Validate the input. If any errors, print "BAD INPUT!" and quit. Potential errors: 
+	7a. NO DIVISION BY ZERO (or modulus by zero)
+	7b. Check to make sure they type within the valid range, for example a number between 1 and 4
+	7c. Check for negative square root values, these are imaginary numbers
+	7d. Check user input for valid values passed in. If the user types "addition" when you expected an int, that is an error
+
+EXTRA CREDIT!!!
+
+9. Add modulus as option #5 in prompt 3a. Don't change the prompt (in #3a), it will be a
+   secret easter egg. Also modify #7 so it doesn't output BAD INPUT! on a 5.
+
+10. Add logarithms as an option #5 in prompt #1. Don't change the prompt (in #1), it will also
+    be a secret easter egg. YOU WILL WANT TO COMPUTE IN BASE 10!
+	10a. Prompt the user with: "Please enter a number: "
+	10b. Make a float variable whatever you want and read into it
+	10c. Output the result and quit
+	10d. Check for invalid inputs, bad input on a zero or negative number.

@@ -1,0 +1,72 @@
+=========================================
+ ____  ____  ___ ____   ____ _____ ____  
+| __ )|  _ \|_ _|  _ \ / ___| ____/ ___| 
+|  _ \| |_) || || | | | |  _|  _| \___ \ 
+| |_) |  _ < | || |_| | |_| | |___ ___) |
+|____/|_| \_\___|____/ \____|_____|____/ 
+                                         
+ __  __    _    ____  
+|  \/  |  / \  |  _ \ 
+| |\/| | / _ \ | |_) |
+| |  | |/ ___ \|  __/ 
+|_|  |_/_/   \_\_|    
+                      
+=========================================
+
+Purpose: To learn how to modify/repurpose existing code that is similar to
+what you want to do to do what you want to do.
+
+Goal: Draw on a map the location of at least the top 100 cities in the world,
+and then again at least the top 100 cities in the US.
+
+Step 1. Download two different CSV files containing city location data. One
+for cities in the US, and one for cities around the world (both have to have
+at least 100 cities in their files). They have to have latitude and longitude
+data for this to work. 
+
+(Which files should you download? You figure it out! It's part of the
+assignment. Kaggle is a good starting point, or just googling for city data
+with longitude and latitude.)
+
+Step 2. Load the CSV files into your C++ program here. You should use
+file I/O, readline/getline until the next comma, etc. Store the data in a
+"EarthquakeUSGS" object because the demo code is already set up to graph
+earthquake data and you can mod it to graph city data instead.
+
+Step 3. Graph them in BRIDGES on top of an overlay of the world and of the
+United States. There is demo code already loaded up for you that will grab
+earthquake data and display it on top of the world. This is there to show you
+how you can put lat/long data with labels on top of the map of the world.
+
+For example:
+https://bridges-cs.herokuapp.com/assignments/356/wkerney
+
+Step 4. Remove all the code between the -----'s that pull actual earthquake
+data.  Don't graph any actual earthquakes. If you do, you will get a 0.
+What you want to do is use the existing functionality for graphing earthquakes
+to graph cities instead. You want to change this code so that it uses your
+lat/long data for cities, and the names of cities when you hover over them.
+Set the "magnitude" of the earthquakes to the population of the cities, and
+then color code them based on their population sizes.
+
+Demo code for all of this exists already in main.cc.
+You just need to look at it and *adapt* the code. This is a crucial CS skill.
+
+Once you can graph all the cities on the world map, change the project number
+so you don't overwrite it when you move to the next step.
+
+Step 5. Do it again, this time for cities in the US. You'll need to swap the
+bridges.setMap() line of code to the one that is commented out so that it uses
+the overlay for the US instead of the world (change "world" to "us").
+
+Send the link for this project also to me on Canvas. You probably should make
+a Word document or something with both links in it, and a screenshot of both.
+
+You're done!
+
+Grading:
+10/10 A nice color-coded map of all the main cities in the US and in the world
+-1 if you don't color code them based on population size (demo code exists
+that color codes them based on lat/long - don't use that)
+-3 if you only do one of the maps (US vs World) and not the other
+-3 if you don't have an overlay on both graphs

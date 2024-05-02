@@ -1,0 +1,45 @@
+==========================================
+ ____  ____  ___ ____   ____ _____ ____  
+| __ )|  _ \|_ _|  _ \ / ___| ____/ ___| 
+|  _ \| |_) || || | | | |  _|  _| \___ \ 
+| |_) |  _ < | || |_| | |_| | |___ ___) |
+|____/|_| \_\___|____/ \____|_____|____/ 
+                                         
+ ____   ___  _  __   __
+|  _ \ / _ \| | \ \ / /
+| |_) | | | | |  \ V / 
+|  __/| |_| | |___| |  
+|_|    \___/|_____|_|  
+                       
+==========================================
+
+Purpose: To teach how to sample a continuous function and graph it using
+BRIDGES. And how to take existing code that does something similar to what you
+want and *adapting* it to do what you want.
+
+Goal: Make a graphing calculator! 
+
+The demo code will show you how to draw a sine wave from -2 to 8 by sampling
+it every 0.3 units. Sampling every .3 units makes it kinda smooth kinda rough,
+you will be able to pick out the individual lines in it. Example:
+https://bridges-cs.herokuapp.com/assignments/357/wkerney
+
+You will prompt the user to enter a polynomial (one way or another).
+
+You must change the domain from -2 to 8 to -10 to 10. (The domain means the x
+values the graph covers.)
+You will change the range from -2 to 2 to whatever the minimum and maximum y
+values are for the polynomial.
+
+You will graph it from x = -10 to x = 10, sampling it every .01 units.
+
+Do this for three different equations. You must submit three different
+links (change the project number each time!) as well as screenshots on
+Canvas with each link graphing a different polynomial.
+
+Grading:
+10/10 if you can input and graph any valid polynomials
+8/10 if you have a limited input system for inputting polynomials
+6/10 if you just hardcode a few equations and graph them.
+-1 if you didn't change the viewport to match the right domain and range
+-1 if you didn't change the sampling rate

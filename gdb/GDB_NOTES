@@ -1,0 +1,46 @@
+Setting up:
+Put "set tui border-kind space" into your ~/.gdbinit file
+
+Compiling your code:
+g++ -g main.cc
+
+Run GDB in TUI (text user interface) mode:
+gdb -tui main.cc
+
+Set a breakpoint:
+b 9 (set a breakpoint on line 9)
+
+List breakpoints:
+info break
+
+Delete breakpoints:
+del 1
+del (deletes all breakpoints)
+
+Run your code:
+run (will run until a breakpoint is hit, or you hit ctrl-c to drop back into gdb)
+
+Print the value of a variable:
+print num
+print vec (shows all values in the vector)
+
+Watch a variable (breaks if the variable changes):
+watch num
+
+Step Into a Function:
+step (if you hit enter it will repeat this)
+
+Step Over a Function:
+next (if you hit enter it will repeat this)
+
+Step Out of a Function:
+finish (it will exit the function you're in)
+
+Continue after breakpoint:
+continue (runs until the next breakpoint)
+
+Backtrace (shows your function call stack):
+bt
+
+Up (goes up a function level):
+up

@@ -1,0 +1,100 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ ____  ____  ___ ____   ____ _____ ____  
+| __ )|  _ \|_ _|  _ \ / ___| ____/ ___| 
+|  _ \| |_) || || | | | |  _|  _| \___ \ 
+| |_) |  _ < | || |_| | |_| | |___ ___) |
+|____/|_| \_\___|____/ \____|_____|____/ 
+                                         
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Purpose: To learn for loops and visualize the results
+
+Instructions: Sign up on the BRIDGES web site and get a username and API key
+and put them in the spot where they go at the top of main. Figure out how to
+do what is asked of you from the demo code provided.
+
+There are two BRIDGES classes you need to know:
+ColorGrid grid(SIZE,SIZE); which makes a grid that can hold colors of size SIZExSIZE
+Color(R,G,B) which takes values for Red, Green, Blue between 0 and 255.
+
+You can set the color of a spot on a ColorGrid like this:
+grid.set(5, 2, Color(80,40,20));
+
+This sets "Row 5" x "Column 2" to the color (60,40,20) which is a kind of
+brown. (255,255,255) is white, (0,0,0) is black, (255,0,0) is pure red, etc.
+
+You have the option of doing a variety of projects here. You can only do one.
+All of the options will have you writing colors to a grid like the example
+code above.
+
+Pick one of the following:
+
+----------------------------------------------------------------------------
+
+1) Calculate Pi
+
+This draws red and blue grid squares on the ColorGrid
+
+To get an A you must:
+A) Have a visualization that looks like this (link it on Canvas): 
+https://bridges-cs.herokuapp.com/assignments/71/wkerney
+B) Output what value of pi you estimated
+
+Basically this code creates a 512x512 grid and randomly rolls the dice to put
+a dot between row and column 0 and 511. If that spot is within the radius of
+the circle, you color the grid red, otherwise you color it blue. Keep track of
+how many hits you get inside the circle versus misses outside the circle,
+then use the power of algebra to estimate Pi. Do this for 100'000 dots.
+
+Submit a copy of your code on Canvas in a text file as well as screenshots to
+your visualizations and links to them on BRIDGES.
+
+----------------------------------------------------------------------------
+
+2) Checkerboard
+
+This generates a checkerboard pattern on the ColorGrid. Simple patterns are
+worth less of a grade than more complicated ones. Write code to mimic the
+output of my program, and submit screenshots of it on Canvas. Your grade
+depends on how many of these you can emulate in code.
+
+http://bridges-cs.herokuapp.com/assignments/125/wkerney
+(Completing the above awards a C on the assignment)
+
+http://bridges-cs.herokuapp.com/assignments/126/wkerney
+(Completing both of the above awards a B on the asssignment)
+
+http://bridges-cs.herokuapp.com/assignments/127/wkerney
+(Completing three of the above awards a 9/10 on the assignment)
+
+http://bridges-cs.herokuapp.com/assignments/128/wkerney
+(Completing all of the above awards a 10/10).
+
+Submit a copy of your code on Canvas in a text file as well as screenshots to
+your visualizations and links to them on BRIDGES.
+
+----------------------------------------------------------------------------
+
+3) Square Fill
+
+For this one you wil draw squares of increasing size until they touch either
+an edge or a square already on the grid. Stop when the image is filled with
+colors.
+
+Write code to mimic the output of my program, and submit screenshots of it on
+Canvas. Your grade depends on how sophisticated your fill is.
+
+Here is what an A looks like:
+http://bridges-cs.herokuapp.com/assignments/73/wkerney
+
+If you can't figure out all of this, you can get a B by doing something less
+complicated, such as drawing increasing squares of different colors on the
+grid and not worrying about collision. It should still have vaguely the same
+look as the link above.
+
+Submit a copy of your code on Canvas in a text file as well as screenshots to
+your visualizations and links to them on BRIDGES.
+
+----------------------------------------------------------------------------
+
+4) Bug Stomp. Talk to Mencarelli.

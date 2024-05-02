@@ -1,0 +1,97 @@
+==========================================================================
+ _____ _                           _                   
+| ____| | ___ _ __ ___   ___ _ __ | |_ __ _ _ __ _   _ 
+|  _| | |/ _ \ '_ ` _ \ / _ \ '_ \| __/ _` | '__| | | |
+| |___| |  __/ | | | | |  __/ | | | || (_| | |  | |_| |
+|_____|_|\___|_| |_| |_|\___|_| |_|\__\__,_|_|   \__, |
+                                                 |___/ 
+ ____  _                 _   ____            _     ____                  
+/ ___|| | _______      _| | |  _ \ __ _ _ __| |_  |  _ \  ___ _   ___  __
+\___ \| |/ / _ \ \ /\ / / | | |_) / _` | '__| __| | | | |/ _ \ | | \ \/ /
+ ___) |   <  __/\ V  V /| | |  __/ (_| | |  | |_  | |_| |  __/ |_| |>  < 
+|____/|_|\_\___| \_/\_/ |_| |_|   \__,_|_|   \__| |____/ \___|\__,_/_/\_\
+
+==========================================================================
+
+On paper and parchment they taught me to write,                                                                                                                              In Euclid and Grammar they opened my eyes,                                                                                                                                   And in Multiplication in truth I was bright,                                                                                                                                 Agus fágaimíd siúd mar atá sé.                                                                                                                                                                                                                                                                                                                            -The Limerick Rake (trad)                                                                                                                                                                                                                                                                                                                                 ================================================ 
+
+Do you remember seeing times tables back in 2nd grade?
+
+For this assignment, you will generate addition, subtraction, multiplication, 
+division, and remainder tables for use in a classroom. At every step along the way, 
+you must vet the input from the user, and if they type something bad, you must quit 
+the program with a "BAD INPUT!" error message.
+
+Step 1) The user will input what kind of table they want. They will type 
+1 for addition, 2 for subtraction, 3 for multiplication, 4 for division, 
+and 5 for remainder. Possible Errors: The user types in something that is 
+not an integer, or the user types something other than 1-5.
+
+Step 2) The user will enter what the minimum and maximum numbers on the table
+are (these are inclusive, so if they type in 1 and 12, it will have all
+numbers from 1 to 12 on the times table)
+Possible Errors: The user types in something not an integer, the user types in
+a minimum greater than the maximum, the user types in something that will
+result in a table being bigger than 20x20 (the maximum size allowed)
+
+Step 3) You will output the corresponding operation (+, -, X, /, %) if 
+you are doing addition, subtraction, multiplication, division, or modulus
+respectively. You will then output all the column headers on the top row.
+Then you will print each row. Each row will have a row header, followed by
+the results in each entry in the table. Each entry in the table will be 
+separated by a tab ("\t") character.
+
+Possible Errors: Consider what happens when you divide or modulus by 0. 
+If Division by Zero occurs, print the table as you normally would BUT
+every time you divide by 0, output "nan" (not a number) in the table itself.
+DO NOT QUIT THE PROGRAM ON DIVISION BY ZERO! 
+Another Error: Formatting of the headers. Be sure you do this right or it
+will not pass the autograder.
+
+Pro Tip: Try just getting a normal times table (from 1 to 12) working before
+doing the rest of the assignment.
+
+==========================================================
+Sample Run (the user wants an addition table from 1 to 5)
+==========================================================
+
+Choose: 
+1. Addition Table
+2. Subtraction Table
+3. Times Table
+4. Division Table
+5. Modulus Table
+1
+Please enter the smallest number on the table:
+1
+Please enter the largest number on the table:
+5
++       1       2       3       4       5
+1       2       3       4       5       6
+2       3       4       5       6       7
+3       4       5       6       7       8
+4       5       6       7       8       9
+5       6       7       8       9       10
+
+==========================================================
+Sample Run (the user wants a times table from 5 to 9)
+==========================================================
+
+Choose:
+1. Addition Table
+2. Subtraction Table
+3. Times Table
+4. Division Table
+5. Modulus Table
+3
+Please enter the smallest number on the table:
+5
+Please enter the largest number on the table:
+9
+X       5       6       7       8       9
+5       25      30      35      40      45
+6       30      36      42      48      54
+7       35      42      49      56      63
+8       40      48      56      64      72
+9       45      54      63      72      81
+
